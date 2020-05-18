@@ -1,5 +1,5 @@
 # ⛈ TrackAmphan ⛈ `v1.1.0`
-<img src="assests/tl.png" height=100>
+<img src="tl.png" height=100>
 An Android based web-app which gives live information about the Severe Cyclonic Storm ‘AMPHAN’.
 
 *DOWNLOAD THE APP*: Check releases to download the latest version of app.
@@ -23,8 +23,3 @@ An Android based web-app which gives live information about the Severe Cyclonic 
 - Lite and consumes less space. 🚀
 - Eyecatching UI. 📲
 
-### Screenshots
-<img src="assests/home.jpg" height=400> <img src="assests/prone.jpg" height=400> <img src="assests/twitter.jpg" height=400> <img src="assests/about.jpg" height=400>
-
-#### Layout Details
-<img src="assests/Layout Details.png" height=400>
