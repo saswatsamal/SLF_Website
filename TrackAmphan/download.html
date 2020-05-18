@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="img/tl.png" type="image/png">
+<meta name="apple-mobile-web-app-title" content="TrackAmphan">
+<title>TrackAmphan : Download App</title>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppin'>
+<style>
+:root,
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  background: linear-gradient(to left top, rgba(254, 188, 197, 0.2), rgba(55, 217, 213, 0.2));
+  -webkit-font-smoothing: antialiased;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download__row {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 35em) {
+  .download__row {
+    flex-direction: row;
+  }
+}
+.download__title, .download__subtitle {
+  color: #8d9da3;
+  text-align: center;
+}
+.download__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0.5em 0 0;
+  animation: fadeSlideDown 1s cubic-bezier(0.55, 0.15, 0.45, 0.85);
+}
+@media (min-width: 50em) {
+  .download__title {
+    font-size: 2.5vw;
+  }
+}
+.download__subtitle {
+  font-weight: 200;
+  margin: 0 0 1em;
+  animation: fadeSlideUp 1s cubic-bezier(0.55, 0.15, 0.45, 0.85);
+}
+@media (min-width: 50em) {
+  .download__subtitle {
+    font-size: 2vw;
+  }
+}
+
+.phone {
+  display: block;
+  width: 50%;
+}
+
+.icon {
+  height: 2.5rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+span {
+  display: inline-block;
+}
+
+.app-icon {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1.7543859649rem;
+  background-color: #20BEFF;
+ 
+}
+.app-icon:before, .app-icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+}
+
+
+.icon-link {
+  min-width: 18rem;
+  background: #20BEFF;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem 2.5rem 2rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  animation: turnUp 0.3s cubic-bezier(0.55, 0.15, 0.45, 0.85);
+  transition: box-shadow 0.2s cubic-bezier(0.55, 0.15, 0.45, 0.85);
+}
+.icon-link__eyebrow {
+    text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+}
+.icon-link__source {
+    text-align: center;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.icon-link:hover, .icon-link:focus, .icon-link:active {
+  color: #fff;
+  box-shadow: 0 14px 33px rgba(32, 190, 255, 0.09);
+}
+.icon-link:hover svg, .icon-link:focus svg, .icon-link:active svg {
+  fill: #fff;
+}
+.icon-link--apple:hover, .icon-link--apple:focus, .icon-link--apple:active {
+  background: #999;
+}
+.icon-link--google:hover, .icon-link--google:focus, .icon-link--google:active {
+  background: #607D8B;
+}
+
+@keyframes turnUp {
+  from {
+    transform: scale(0.9) rotate(3deg) translate3d(0, 10%, 0);
+  }
+}
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0.8;
+    transform: translate3d(0, 3%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0.8;
+    transform: translate3d(0, -3%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeSlideUpSlow {
+  from {
+    opacity: 0.8;
+    transform: translate3d(0, 15%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="download">
+<figure class="app-icon"> <img src="img/tl.png" width="100"></figure>
+<h1 class="download__title">TrackAmphan</h1>
+<h2 class="download__subtitle">Live Updates of Cyclone Amphan.</h2>
+<div class="download__row">
+<a href="https://github.com/soafablab/TrackAmphan/releases/download/v1.1.0/TrackAmphan.apk" class="icon-link icon-link--apple"><img src="https://img.icons8.com/cute-clipart/64/000000/android.png"/>
+<span class="icon-link__text">
+<span class="icon-link__eyebrow">Download (v1.1.0)</span>
+</span>
+</a>
+</div>
+</div>
+</body>
+</html>
